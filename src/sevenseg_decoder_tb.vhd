@@ -56,42 +56,42 @@ begin
         -- test 0
         w_Hex <= x"0";
         wait for 10 ns;
-        assert w_seg_n = "1000000" report "bad output for 0" severity failure;
+        assert w_seg_n = "0000001" report "bad output for 0" severity failure;
 
         -- test 1
         w_Hex <= x"1";
         wait for 10 ns;
-        assert w_seg_n = "1111001" report "bad output for 1" severity failure;
+        assert w_seg_n = "1001111" report "bad output for 1" severity failure;
 
         -- test 2
         w_Hex <= x"2";
         wait for 10 ns;
-        assert w_seg_n = "0100100" report "bad output for 2" severity failure;
+        assert w_seg_n = "0010010" report "bad output for 2" severity failure;
 
         -- test 3
         w_Hex <= x"3";
         wait for 10 ns;
-        assert w_seg_n = "0110000" report "bad output for 3" severity failure;
+        assert w_seg_n = "0000110" report "bad output for 3" severity failure;
 
         -- test 4
         w_Hex <= x"4";
         wait for 10 ns;
-        assert w_seg_n = "0011001" report "bad output for 4" severity failure;
+        assert w_seg_n = "1001100" report "bad output for 4" severity failure;
 
         -- test 5
         w_Hex <= x"5";
         wait for 10 ns;
-        assert w_seg_n = "0010010" report "bad output for 5" severity failure;
+        assert w_seg_n = "0100100" report "bad output for 5" severity failure;
 
         -- test 6
         w_Hex <= x"6";
         wait for 10 ns;
-        assert w_seg_n = "0000010" report "bad output for 6" severity failure;
+        assert w_seg_n = "0100000" report "bad output for 6" severity failure;
 
         -- test 7
         w_Hex <= x"7";
         wait for 10 ns;
-        assert w_seg_n = "1111000" report "bad output for 7" severity failure;
+        assert w_seg_n = "0001111" report "bad output for 7" severity failure;
 
         -- test 8
         w_Hex <= x"8";
@@ -101,7 +101,7 @@ begin
         -- test 9
         w_Hex <= x"9";
         wait for 10 ns;
-        assert w_seg_n = "0010000" report "bad output for 9" severity failure;
+        assert w_seg_n = "0000100" report "bad output for 9" severity failure;
 
         -- test A
         w_Hex <= x"A";
@@ -111,27 +111,27 @@ begin
         -- test B
         w_Hex <= x"B";
         wait for 10 ns;
-        assert w_seg_n = "0000011" report "bad output for B" severity failure;
+        assert w_seg_n = "1100000" report "bad output for B" severity failure;
 
         -- test C
         w_Hex <= x"C";
         wait for 10 ns;
-        assert w_seg_n = "1000110" report "bad output for C" severity failure;
+        assert w_seg_n = "0110001" report "bad output for C" severity failure;
 
         -- test D
         w_Hex <= x"D";
         wait for 10 ns;
-        assert w_seg_n = "0100001" report "bad output for D" severity failure;
+        assert w_seg_n = "1000010" report "bad output for D" severity failure;
 
         -- test E
         w_Hex <= x"E";
         wait for 10 ns;
-        assert w_seg_n = "0000110" report "bad output for E" severity failure;
+        assert w_seg_n = "0110000" report "bad output for E" severity failure;
 
         -- test F
         w_Hex <= x"F";
         wait for 10 ns;
-        assert w_seg_n = "0001110" report "bad output for F" severity failure;
+        assert w_seg_n = "0111000" report "bad output for F" severity failure;
 
         wait;
     end process;
