@@ -116,7 +116,7 @@ begin
         -- test C
         w_Hex <= x"C";
         wait for 10 ns;
-        assert w_seg_n = "1000110" report "bad output for C" severity failure;
+        assert w_seg_n = "0100111" report "bad output for C" severity failure;
 
         -- test D
         w_Hex <= x"D";
