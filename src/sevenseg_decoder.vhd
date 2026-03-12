@@ -57,6 +57,6 @@ begin
                    "0100001" when "1101", -- D
                    "0000110" when "1110", -- E
                    "0001110" when "1111", -- F
-                   "1111111" when others; -- Off
+                   "1111111" when others;
    
 end Behavioral;
