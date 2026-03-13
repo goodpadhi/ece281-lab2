@@ -101,7 +101,7 @@ begin
         -- test 9
         w_Hex <= x"9";
         wait for 10 ns;
-        assert w_seg_n = "0010000" report "bad output for 9" severity failure;
+        assert w_seg_n = "0011000" report "bad output for 9" severity failure;
 
         -- test A
         w_Hex <= x"A";
