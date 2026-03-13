@@ -105,7 +105,7 @@ begin
 	-- wire up active-low 7SD anode (active low) to button (active-high)
 	-- display 7SD 0 only when button pushed
 	-- other 7SD are kept off
-
+    w_7SD_EN_n <= not btnC;
     -- active-low enable for display 0
     an  <= (0 => w_7SD_EN_n, others => '1');
 	-----------------------------------------------------
